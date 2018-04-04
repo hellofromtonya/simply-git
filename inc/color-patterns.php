@@ -1,31 +1,30 @@
 <?php
 /**
- * Twenty Seventeen: Color Patterns
+ * Simply Git: Color Patterns
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @package Simply_Git
  * @since 1.0
  */
 
 /**
  * Generate the CSS for the current custom color scheme.
  */
-function twentyseventeen_custom_colors_css() {
+function simplygit_custom_colors_css() {
 	$hue = absint( get_theme_mod( 'colorscheme_hue', 250 ) );
 
 	/**
-	 * Filter Twenty Seventeen default saturation level.
+	 * Filter Simply Git default saturation level.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Simply Git 1.0
 	 *
 	 * @param int $saturation Color saturation level.
 	 */
-	$saturation = absint( apply_filters( 'twentyseventeen_custom_colors_saturation', 50 ) );
+	$saturation = absint( apply_filters( 'simplygit_custom_colors_saturation', 50 ) );
 	$reduced_saturation = ( .8 * $saturation ) . '%';
 	$saturation = $saturation . '%';
 	$css = '
 /**
- * Twenty Seventeen: Color Patterns
+ * Simply Git: Color Patterns
  *
  * Colors are ordered from dark to light.
  */
@@ -568,13 +567,13 @@ body.colors-custom,
 }';
 
 	/**
-	 * Filters Twenty Seventeen custom colors CSS.
+	 * Filters Simply Git custom colors CSS.
 	 *
-	 * @since Twenty Seventeen 1.0
+	 * @since Simply Git 1.0
 	 *
 	 * @param string $css        Base theme colors CSS.
 	 * @param int    $hue        The user's selected color hue.
 	 * @param string $saturation Filtered theme color saturation level.
 	 */
-	return apply_filters( 'twentyseventeen_custom_colors_css', $css, $hue, $saturation );
+	return apply_filters( 'simplygit_custom_colors_css', $css, $hue, $saturation );
 }

@@ -4,8 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @package Simply_Git
  * @since 1.0
  * @version 1.2
  */
@@ -15,7 +14,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 		if ( is_sticky() && is_home() ) {
-			echo twentyseventeen_get_svg( array( 'icon' => 'thumb-tack' ) );
+			echo simplygit_get_svg( array( 'icon' => 'thumb-tack' ) );
 		}
 	?>
 	<header class="entry-header">
@@ -23,10 +22,10 @@
 			if ( 'post' === get_post_type() ) {
 				echo '<div class="entry-meta">';
 					if ( is_single() ) {
-						twentyseventeen_posted_on();
+						simplygit_posted_on();
 					} else {
-						echo twentyseventeen_time_link();
-						twentyseventeen_edit_link();
+						echo simplygit_time_link();
+						simplygit_edit_link();
 					}
 				echo '</div><!-- .entry-meta -->';
 			};
@@ -79,12 +78,12 @@
 
 			/* translators: %s: Name of current post */
 			the_content( sprintf(
-				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'simply-git' ),
 				get_the_title()
 			) );
 
 			wp_link_pages( array(
-				'before'      => '<div class="page-links">' . __( 'Pages:', 'twentyseventeen' ),
+				'before'      => '<div class="page-links">' . __( 'Pages:', 'simply-git' ),
 				'after'       => '</div>',
 				'link_before' => '<span class="page-number">',
 				'link_after'  => '</span>',
@@ -96,7 +95,7 @@
 
 	<?php
 	if ( is_single() ) {
-		twentyseventeen_entry_footer();
+		simplygit_entry_footer();
 	}
 	?>
 

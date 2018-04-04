@@ -2,8 +2,7 @@
 /**
  * Template part for displaying pages on front page
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @package Simply_Git
  * @since 1.0
  * @version 1.0
  */
@@ -32,7 +31,7 @@ global $twentyseventeencounter;
 			<header class="entry-header">
 				<?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
 
-				<?php twentyseventeen_edit_link( get_the_ID() ); ?>
+				<?php simplygit_edit_link( get_the_ID() ); ?>
 
 			</header><!-- .entry-header -->
 
@@ -40,7 +39,7 @@ global $twentyseventeencounter;
 				<?php
 					/* translators: %s: Name of current post */
 					the_content( sprintf(
-						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'twentyseventeen' ),
+						__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'simply-git' ),
 						get_the_title()
 					) );
 				?>

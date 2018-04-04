@@ -2,8 +2,7 @@
 /**
  * Displays header media
  *
- * @package WordPress
- * @subpackage Twenty_Seventeen
+ * @package Simply_Git
  * @since 1.0
  * @version 1.0
  */
