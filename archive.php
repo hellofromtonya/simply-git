@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package Simply_Git
- * @since 1.0
+ * @since 1.5
  * @version 1.0
  */
 

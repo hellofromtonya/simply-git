@@ -5,7 +5,7 @@
  * @link https://codex.wordpress.org/Custom_Headers
  *
  * @package Simply_Git
- * @since 1.0
+ * @since 1.5
  */
 
 /**

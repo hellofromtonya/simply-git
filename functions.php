@@ -5,7 +5,7 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package Simply_Git
- * @since 1.0
+ * @since 1.5
  */
 
 /**
